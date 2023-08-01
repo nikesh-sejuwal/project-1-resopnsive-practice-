@@ -1,28 +1,35 @@
+::-webkit-scrollbar {
+   display: none;
+}
+
 .parent-1 {
    position: inherit;
 }
-.flex_nav {
-   display: flex;
-   flex-direction: column;
-}
-
-.nav {
-   width: 100%;
-   justify-content: center;
-}
 
 .nav_item {
-   font-size: 0.75rem;
+   font-size: 1rem;
    font-weight: 600;
-}
-
-.nav_item + .nav_item {
-   margin-left: 15px;
 }
 
 .logo {
    margin: 0 auto;
 }
+
+/* new */
+.flex_nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+}
+.nav {
+   width: 100%;
+}
+.navlist {
+   margin: 0 auto;
+}
+
+/* end */
 
 .parent {
    padding: 60px 0;
@@ -78,4 +85,8 @@
    flex-direction: column;
    width: 100%;
    gap: 20px;
+}
+
+.intro {
+   order: -1;
 }

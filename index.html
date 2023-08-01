@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable= no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable= no"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@300&display=swap');
@@ -11,11 +14,21 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&family=Roboto:wght@300&display=swap');
     </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+    </style>
 
-     <link rel="stylesheet" media="screen and (max-width:600px)" href="./css/mobile.css">
-     <link rel="stylesheet" media="(min-width:600px) and (max-width:768px)" href="./css/widescreen.css">
-     <script src="./css/script.js"></script>
-
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:600px)"
+      href="./css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width:600px) and (max-width:768px)"
+      href="./css/widescreen.css"
+    />
+    <script src="./css/script.js"></script>
 
     <title>Flexbox challange</title>
   </head>
@@ -23,23 +36,32 @@
     <div class="parent-1">
       <div class="container">
         <div class="flex_nav">
-        <a href="#" class="logo"><img src="./img/logo.svg" alt="logo"></a>
-        <nav class="nav">
-          <ul class="navlist navlist--primary">
-            <li class="nav_item"><a href="#" class="navlink">Home</a></li>
-            <li class="nav_item"><a href="#" class="navlink">Contact</a></li>
-            <li class="nav_item"><a href="#" class="navlink">About</a></li>
-          </ul>
-          <ul class="navlist">
-            <li class="nav_item"><a href="#" class="navlink-1">Sign_in</a></li>
-            <li class="nav_item"><a href="#" class="btn">Sign_up</a></li>
-          </ul>
+          <a href="#" class="logo"><img src="./img/logo.svg" alt="logo" /></a>
+          <nav class="nav">
+            <ul class="navlist navlist--primary">
+              <li class="nav_item"><a href="#" class="navlink">Home</a></li>
+              <li class="nav_item"><a href="#" class="navlink">Contact</a></li>
+              <li class="nav_item"><a href="#" class="navlink">About</a></li>
+            </ul>
+            <ul class="navlist">
+              <li class="nav_item">
+                <a href="#" class="navlink-1">Sign in</a>
+              </li>
+              <li class="nav_item"><a href="#" class="btn">Sign up</a></li>
+            </ul>
+          </nav>
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
         </div>
-      </nav>
+      </div>
     </div>
-  </div>
-</div>
 
+    <nav class="mobile_nav">
+      <a href="#" class="navlink">Home</a>
+      <a href="#" class="navlink">Contact</a>
+      <a href="#" class="navlink">About</a>
+    </nav>
 
     <div class="parent">
       <div class="container">

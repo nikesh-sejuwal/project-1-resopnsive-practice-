@@ -9,16 +9,6 @@
    box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-   display: inline-block;
-   color: red;
-   background: linear-gradient(
-      180deg,
-      rgb(235, 243, 0) 0%,
-      rgb(165, 163, 48) var(--mid),
-      rgb(204, 208, 133) var(--end)
-   );
-}
 /* ::-webkit-scrollbar-thumb {
 } */
 
@@ -38,6 +28,7 @@ li {
 
 a {
    text-decoration: none;
+   font-family: "Playfair Display", serif;
 }
 
 .btn {
@@ -53,6 +44,9 @@ a {
    position: sticky;
    top: 0;
    /* background-color: ; */
+}
+.logo {
+   z-index: 1;
 }
 
 .flex_nav {
@@ -82,8 +76,8 @@ a {
    margin: 0 auto;
 }
 .nav_item {
-   font-size: 1.15rem;
-   font-weight: 800;
+   font-size: 1.2rem;
+   font-weight: 600;
    color: #000;
    text-transform: uppercase;
    font-family: "Playfair Display", serif;
@@ -96,6 +90,84 @@ a {
 .nav_item + .nav_item {
    margin-left: 40px;
 }
+
+/* hamburger */
+
+.hamburger {
+   position: relative;
+   display: block;
+   width: 35px;
+   /* height: 7px; */
+   cursor: pointer;
+   background: none;
+   appearance: none;
+   outline: none;
+   border: none;
+   z-index: 2;
+   overflow: hidden;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+   content: "";
+   display: block;
+   /* position: absolute; */
+   width: 100%;
+   height: 5px;
+   background-color: #000000;
+   margin: 6px 0px;
+   transition: 0.4s;
+}
+
+.hamburger.is_active::before {
+   transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is_active::after {
+   transform: rotate(45deg) translate(-9px, -7px);
+}
+
+.hamburger.is_active .bar {
+   opacity: 0;
+}
+
+/* mbl */
+.mobile_nav {
+   position: fixed;
+   top: 0;
+   left: 100%;
+   width: 100%;
+   height: 100%;
+   display: block;
+   z-index: 1;
+   background-color: #e5dec3;
+   padding-top: 110px;
+   transition: 0.4s;
+}
+
+.mobile_nav.is_active {
+   left: 0;
+}
+
+.mobile_nav a {
+   font-size: 1.3rem;
+   display: block;
+   width: 100%;
+   max-width: 200px;
+   margin: 0 auto;
+   text-align: center;
+   width: fit-content;
+   margin-bottom: 16px;
+   padding: 7px 14px;
+   background-color: rgba(207, 201, 156, 0.5);
+}
+
+.mobile_nav a:hover {
+   background-color: #c3b478;
+}
+
+/* end */
 
 .parent {
    background-color: #e5dec3;
@@ -219,5 +291,31 @@ a {
 
    .intro p {
       font-size: 1rem;
+   }
+}
+
+@media screen and (min-width: 769px) {
+   .mobile_nav {
+      display: none;
+   }
+   .hamburger {
+      display: none;
+   }
+
+   ::-webkit-scrollbar {
+      display: inline-block;
+      color: red;
+      background: linear-gradient(
+         180deg,
+         rgb(135, 135, 60) 0%,
+         rgb(79, 78, 66) var(--mid),
+         rgb(219, 222, 42) var(--end)
+      );
+   }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+   .navlist.navlist--primary {
+      display: none;
    }
 }
