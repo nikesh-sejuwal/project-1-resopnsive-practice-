@@ -1,0 +1,63 @@
+.parent-1 {
+   position: inherit;
+}
+.flex_nav {
+   display: flex;
+   flex-direction: column;
+}
+
+.nav_item {
+   font-size: 1.1rem;
+   font-weight: 800;
+}
+
+.logo {
+   margin: 0 auto;
+}
+
+.nav_item + .nav_item {
+   margin-left: 25px;
+}
+
+.parent {
+   background-color: #e5dec3;
+   padding: 60px 0;
+}
+
+.intro_content {
+   width: 90%;
+}
+
+.container-1 {
+   width: 90%;
+}
+
+.column {
+   font-size: 1.1rem;
+}
+
+.container-2 {
+   display: flex;
+   /* flex-direction: column; */
+   width: 90%;
+}
+
+.intro {
+   width: 100%;
+   font-size: 1.5rem;
+}
+
+.intro p {
+   font-size: 1rem;
+}
+
+/* container-3 */
+.parent-3 {
+   padding: 20px 0;
+}
+
+.container-3 {
+   display: flex;
+   width: 90%;
+   gap: 20px;
+}

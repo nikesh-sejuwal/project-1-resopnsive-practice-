@@ -1,0 +1,223 @@
+:root {
+   --mid: 35%;
+   --end: 100%;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+   display: inline-block;
+   color: red;
+   background: linear-gradient(
+      180deg,
+      rgb(235, 243, 0) 0%,
+      rgb(165, 163, 48) var(--mid),
+      rgb(204, 208, 133) var(--end)
+   );
+}
+/* ::-webkit-scrollbar-thumb {
+} */
+
+/* body {
+   font-size: 1.3rem;
+} */
+img {
+   max-width: 100%;
+}
+p {
+   font-family: "Roboto", sans-serif;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+.btn {
+   background-color: #fff;
+   padding: 5px 10px;
+   border-radius: 100px;
+}
+
+/* Navbar */
+.parent-1 {
+   background-color: rgba(232, 217, 99, 0.8);
+   padding: 10px 0;
+   position: sticky;
+   top: 0;
+   /* background-color: ; */
+}
+
+.flex_nav {
+   display: flex;
+}
+.navlink-1 {
+   margin-left: 15px;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* border: 2px solid red; */
+   width: 95%;
+   max-width: 1128px;
+   margin: 0 auto;
+}
+
+.navlist {
+   /* width: 100%; */
+   display: flex;
+}
+
+.navlist--primary {
+   /* border: 2px solid rgb(255, 255, 255); */
+   margin: 0 auto;
+}
+.nav_item {
+   font-size: 1.15rem;
+   font-weight: 800;
+   color: #000;
+   text-transform: uppercase;
+   font-family: "Playfair Display", serif;
+}
+
+.navlink {
+   color: #000;
+}
+
+.nav_item + .nav_item {
+   margin-left: 40px;
+}
+
+.parent {
+   background-color: #e5dec3;
+   padding: 100px 0;
+}
+
+.heading {
+   color: #c66341;
+   font-family: "Playfair Display", serif;
+}
+
+.container {
+   width: 80%;
+   max-width: 1128px;
+   margin: 0 auto;
+   /* padding: 100px auto; */
+}
+
+.intro_content {
+   width: 80%;
+   font-size: 2.2rem;
+   font-family: "Playfair Display", serif;
+   margin: 50px auto;
+   text-align: center;
+}
+
+.heading-p {
+   text-align: center;
+   font-size: 1.125rem;
+   text-transform: uppercase;
+   font-family: "Roboto", sans-serif;
+}
+
+/* container 1 */
+
+.container-1 {
+   width: 80%;
+   margin: 0 auto;
+   padding: 50px 0;
+}
+
+.heading-1 {
+   font-size: 2rem;
+   font-family: "Playfair Display", serif;
+   text-align: center;
+   margin: 30px auto;
+}
+
+.heading-3 {
+   font-family: "Playfair Display", serif;
+   padding-bottom: 15px;
+}
+
+.row {
+   display: flex;
+   width: 100%;
+   max-width: 1128px;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+
+.column + .column {
+   margin-left: 50px;
+}
+
+.column {
+   font-size: 1.2rem;
+}
+
+/* container 2 */
+
+.parent-2 {
+   background-color: #222c2a;
+   padding: 50px 0;
+}
+
+.container-2 {
+   display: flex;
+   width: 80%;
+   max-width: 1128px;
+   gap: 30px;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+}
+
+.intro {
+   width: 60%;
+   color: #fff;
+   font-size: 1.7rem;
+}
+
+.intro p {
+   font-size: 1.2rem;
+}
+
+/* container 3 */
+.parent-3 {
+   background-color: #824936;
+   padding: 50px 0;
+}
+
+.container-3 {
+   display: flex;
+   width: 80%;
+   max-width: 1128px;
+   gap: 30px;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+}
+
+@media (max-width: 985px) and (min-width: 768px) {
+   .column {
+      font-size: 1.1rem;
+   }
+
+   .intro {
+      font-size: 1.3rem;
+   }
+
+   .intro p {
+      font-size: 1rem;
+   }
+}
